@@ -1,9 +1,9 @@
 server {
     listen 80;
-    server_name api.nestjs-app-template.qraxiss.com;
+    server_name api.tesla-tr-inventory-checker.qraxiss.com;
 
-    access_log /var/log/nginx/api.nestjs-app-template.qraxiss.com_access.log;
-    error_log /var/log/nginx/api.nestjs-app-template.qraxiss.com_error.log;
+    access_log /var/log/nginx/api.tesla-tr-inventory-checker.qraxiss.com_access.log;
+    error_log /var/log/nginx/api.tesla-tr-inventory-checker.qraxiss.com_error.log;
 
     location / {
         proxy_pass http://127.0.0.1:3000;

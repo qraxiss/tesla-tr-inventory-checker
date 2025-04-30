@@ -48,4 +48,14 @@ export class ENV {
     @Transform(({ value }) => value.split(","))
     CORS_ALLOWED_URLS: string[]
 
+    @IsArray()
+    @Transform(({ value }) => value.split(","))
+    CHAT_IDS: string[]
+
+
+    @IsString()
+    NEW_INVENTORY_BOT: string
+
+    @IsString()
+    SAME_INVENTORY_BOT: string
 }

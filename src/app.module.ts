@@ -10,6 +10,8 @@ import { SettingModule } from './setting/setting.module';
 import { ConstantModule } from './constant/constant.module';
 import { LogModule } from './log/log.module';
 import { ErrorModule } from './error/error.module';
+import { TeslaModule } from './tesla/tesla.module';
+import { TelegramModule } from './telegram/telegram.module';
 @Module({
   imports: [
     TypeOrmModule.forRootAsync({
@@ -42,6 +44,8 @@ import { ErrorModule } from './error/error.module';
     ConstantModule,
     LogModule,
     ErrorModule,
+    TeslaModule,
+    TelegramModule,
   ],
   controllers: [],
   providers: [EnvService],
